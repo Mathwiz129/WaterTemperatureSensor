@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Temperature Graph</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Chattanooga Water Temperatures</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Water Temperature Graph</h2>
+
+        <div class="current-temp">
+            <p>Current Temperature: <span id="current-temp">--</span> °F</p>
+        </div>        
+
+        <div class="input-group">
+            <div>
+                <label for="start">Start Date & Time:</label>
+                <input type="datetime-local" id="start">
+            </div>
+            <div>
+                <label for="end">End Date & Time:</label>
+                <input type="datetime-local" id="end">
+            </div>
+        </div>
+
+        <div class="button-row">
+            <button onclick="fetchAndPlot()">Generate Graph</button>
+            <button onclick="downloadGraph()">Download Graph</button>
+        </div>
+
+        <canvas id="tempChart" width="800" height="400"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #3c3c3c;
+}
+
+.current-temp {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;  /* Adjusted width for a longer box */
+    margin: 20px auto;
+    margin-top: 50px;
+    background: white;
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-group > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input[type="datetime-local"] {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 100%; /* Makes input fields take up all available space */
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
+
+canvas {
+    display: none;
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+/* Navigation Bar Styles */
+nav {
+    display: flex;
+    justify-content: space-between; /* Spread out the links */
+    background-color: #333;
+    padding: 10px 0px;  /* Added more padding for spacing */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    color: #4CAF50;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 20px; /* Adds space on the left of the logo */
+    flex-shrink: 0;  /* Prevents logo from shrinking */
+}
+
+nav ul {
+    list-style: none;
+    padding-right: 70px;
+    margin: 0;
+    display: flex;
+    gap: 60px; /* Increased space between buttons */
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Button Row Alignment */
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
