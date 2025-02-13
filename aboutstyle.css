@@ -1,0 +1,84 @@
+/* Add this to your styles.css to style the About page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    height: 100vh; /* Make sure the body takes the full height of the screen */
+    text-align: center; /* Center text */
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 15px 15px 15px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding-right: 80px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; /* Ensure it spans the full width */
+}
+
+/* New styles for the about sections */
+.about-box {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0; /* Add margin to separate boxes */
+    width: 80%; /* Set the width to 80% of the screen */
+    max-width: 1200px; /* Optional: Prevent it from becoming too wide on large screens */
+    border-radius: 8px; /* Rounded corners */
+    box-sizing: border-box; /*09Ensure padding is included in the width */
+}
+
+h1, h2 {
+    color: #28a745; /* Green color for headings */
+}
+
+#introduction, #thank-you {
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+a {
+    color: #333;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #28a745; /* Gold color on hover */
+}
